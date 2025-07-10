@@ -17,7 +17,7 @@ speech_config.speech_recognition_language = "ko-KR"
 
 
 # 오디오 소스 설정 (마이크 사용)
-audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
+audio_config = speechsdk.audio.AudioConfig(filename="/Users/yh/ktds/ai-meeting-agent/speech-service/audio/회의음성.wav")
 
 # Speech Recognizer 객체 생성
 speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
